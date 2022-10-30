@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='st.css') }}" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="" />
+          <label>Password</label>
+          <input type="password" placeholder="" />
+          <label>Confirm Password</label>
+          <input type="password" placeholder="" />
+          <input type="button" value="Submit" />
+        <a href="{{ url_for('login') }}">Already have an account? Log In</a>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
