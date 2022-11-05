@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            STUDENT DETAILS
+        </title>
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+          rel="stylesheet"
+        />
+    </head>
+    <body>
+        <h1 id="header">
+            <center>
+                Welcome!
+            </center>
+        </h1>
+        <div class="container">
+            <div class="form">
+                Please fill in the details!
+            </div>
+            <form method="POST" action="" >
+            <div class="row">
+                <div class="col-25">
+                    Name 
+                </div>
+                <div class="col-75">
+                    <input type="text" placeholder="Please enter your name" name="name"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    Email  
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" placeholder="Please enter your mail id"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    GRE Score
+                </div>
+                <div class="col-75">
+                    <input type="number" name="GRE Score" placeholder="1.0" step="0.01" min="0.5" max="5"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    TOEFL Score 
+                </div>
+                <div class="col-75">
+                    <input type="number" name="TOEFL Score" placeholder="1.0" step="0.01" min="0.5" max="5"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    University Ranking 
+                </div>
+                <div class="col-75">
+                    <input type="number" name="University Rating" min="0"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    SOP 
+                </div>
+                <div class="col-75">
+                    <input type="number" name="SOP" placeholder="1.0" step="0.01" min="0.5" max="5"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    LOR 
+                </div>
+                <div class="col-75">
+                    <input type="number" name="LOR" placeholder="1.0" step="0.01" min="0.5" max="5"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    CGPA 
+                </div>
+                <div class="col-75">
+                    <input type="number" name="CGPA" placeholder="8.5" min="1.0" step="0.01"/><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    No.of.Reaseach papers :
+                </div>
+                <div class="col-75">
+                    <input type="number" min="1" name="Research"/><br>
+                </div>
+            </div>
+        <br>
+        
+        </form>
+        </div> 
+        
+            <div class="button">
+               <center>
+                <input id="sub" type="submit">
+               </center> 
+            </div> 
+  
+    </body>
+</html>
